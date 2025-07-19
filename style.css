@@ -5,26 +5,18 @@ body {
   color: white;
   text-align: center;
   overflow-x: hidden;
-  overflow-y: hidden; /* impede rolagem vertical */
-  height: 100vh;       /* ocupa a altura total da tela */
-}
-
-html {
-  height: 100%;
 }
 
 .container {
-  height: 100vh; /* ocupa 100% da altura da tela */
+  height: 100%;
   max-width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: center;
-  padding-top: 0;           /* removido para centralizar completamente */
+  justify-content: center;
+  padding-top: 80px;
   z-index: 1;
   text-align: center;
-  box-sizing: border-box;
 }
 
 header {
@@ -141,7 +133,6 @@ footer {
   transform: scale(1.1);
 }
 
-/* Responsivo para telas menores */
 @media (max-width: 768px) {
   h2 {
     font-size: 20px;
@@ -175,32 +166,6 @@ footer {
     font-size: 12px;
     padding: 15px 10px;
     word-break: break-word;
-  }
-}
-
-/* Ajustes para telas muito baixas (ex: celulares pequenos) */
-@media (max-height: 700px) {
-  .foto-perfil {
-    width: 100px;
-    height: 100px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  .btn-link {
-    font-size: 15px;
-    padding: 10px;
-  }
-
-  .social-icons {
-    margin-top: 40px;
-    gap: 30px;
-  }
-
-  footer {
-    font-size: 11px;
   }
 }
 
